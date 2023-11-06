@@ -1,21 +1,43 @@
 :root{
     --fuente-titulos: 'Poppins', sans-serif;
     --fuente-texto: 'Poppins', sans-serif;
+    --color-oscuro: #020223;
+    --color-claro: #3d455c;
 }
 
 img{
     width: 95%;
     height: 95%;
-    margin: auto;
 }
 
 h1,h2,h3,h4,h5{
-    color: #020223;
+    color: var(--color-oscuro);
     font-weight: 400;
     font-family: var(--fuente-titulos);
 }
+h1{
+    font-size: 2.8rem;
+}
+h2{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1rem;
+}
 
+.fondo{
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    width: fit-content;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
+.subtitle{
+    font-size: 1.3rem;
+    text-decoration: underline;
+    margin-right: 1rem;
+}
 
 .card{
     background-color: rgb(88, 114, 188);
@@ -28,8 +50,17 @@ h1,h2,h3,h4,h5{
 
 .poster{
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    background-color: var(--color-oscuro);
 }
 
 .info{
     flex: 3;
+}
+
+.info__datos{
+    margin-left: 1rem;
 }

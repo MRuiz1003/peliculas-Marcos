@@ -21,9 +21,12 @@ function Cards({
           <img src={poster} alt={`Poster de ${title}`} />
         </div>
         <div className="info">
-            <h3>{title}</h3>
-            <h5>{releaseDate} | {duration} | {maturity} | {genres.join(' - ')}</h5>
-            <h4>⭐{rating} Rating    <Puntaje puntaje={metascore} />       Metascore</h4>
+            <h2 className="fondo">{title}</h2>
+            <div className="info__datos">
+              <h5>{releaseDate} | {duration} | {maturity} | {genres.join(' - ')}</h5>
+              <h4>⭐{rating} Rating    <Puntaje puntaje={metascore} />       Metascore</h4>
+              <h4><span className="subtitle">Reparto:</span> {director} | {mainActors}</h4>
+            </div>
         </div>
       </div>
     </>
