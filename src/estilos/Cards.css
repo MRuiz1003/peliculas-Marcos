@@ -1,0 +1,28 @@
+img{
+    width: 95%;
+    height: 95%;
+    margin: auto;
+}
+
+h1,h2,h3,h4,h5{
+    color: #020223;
+}
+
+
+
+.card{
+    background-color: rgb(88, 114, 188);
+    margin: 3rem;
+    padding: 1rem;
+    height: 20rem;
+    display: flex;
+}
+
+
+.poster{
+    flex: 1;
+}
+
+.info{
+    flex: 3;
+}
