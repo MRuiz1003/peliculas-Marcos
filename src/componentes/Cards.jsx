@@ -25,7 +25,8 @@ function Cards({
             <div className="info__datos">
               <h5>{releaseDate} | {duration} | {maturity} | {genres.join(' - ')}</h5>
               <h4>⭐{rating} Rating    <Puntaje puntaje={metascore} />       Metascore</h4>
-              <h4><span className="subtitle">Reparto:</span> {director} | {mainActors}</h4>
+              <h4> <span className="subtitle">{director}</span> - {mainActors.join(', ')}</h4>
+              <p>{plot}</p>
             </div>
         </div>
       </div>
