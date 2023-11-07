@@ -9,7 +9,7 @@ function ListaPeliculas() {
       <div>
         {peliculas.map((pelicula) =>{
           return(
-            <div>
+            <div className='lista'>
               <Cards key={pelicula.id} {...pelicula} />
             </div>
           )
